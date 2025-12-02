@@ -3,7 +3,7 @@
     "name": "mils-menu",
     "slug": "mils-menu",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "milsmenu",
     "userInterfaceStyle": "automatic",
@@ -33,9 +33,9 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#6D5151",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#6D5151"
           }
         }
       ]
