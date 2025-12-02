@@ -1,50 +1,266 @@
-# Welcome to your Expo app 👋
+# 🍝 Mils Menu - React Native Food App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<div align="center">
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Redux_Toolkit-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="Redux" />
+  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
+</div>
 
-## Get started
+## 📱 О проекте
 
-1. Install dependencies
+**Mils Menu** - это современное мобильное приложение для просмотра рецептов блюд, созданное с использованием React Native и Expo. Приложение демонстрирует лучшие практики разработки, включая навигацию, управление состоянием через Redux Toolkit, и красивый UI/UX дизайн.
 
+## ✨ Основные возможности
+
+- 🍽️ **Каталог рецептов** - Просмотр блюд по категориям (Italian, Quick & Easy, Hamburgers, German и др.)
+- ❤️ **Избранное** - Добавление и удаление блюд в избранное с помощью Redux
+- 📖 **Детальная информация** - Полное описание блюда с ингредиентами и шагами приготовления
+- 🎨 **Красивый UI** - Современный дизайн с анимациями и градиентами
+- 🔍 **Фильтры** - Диетические особенности (Веган, Вегетарианское, Без лактозы, Без глютена)
+- 🎯 **Навигация** - Drawer Navigation и Stack Navigation
+- 🌙 **Адаптивный дизайн** - Поддержка iOS и Android
+
+## 📸 Скриншоты
+
+<div align="center">
+  <img src="./screenshots/categories.png" width="250" alt="Категории" />
+  <img src="./screenshots/meal-list.png" width="250" alt="Список блюд" />
+  <img src="./screenshots/meal-detail.png" width="250" alt="Детали блюда" />
+</div>
+
+### Главный экран - Категории
+Красочные карточки категорий с интуитивной навигацией
+
+### Список блюд
+Элегантное отображение блюд с фото, бейджами сложности и времени приготовления
+
+### Детали блюда
+Полная информация о блюде: фото, ингредиенты, шаги приготовления, диетические особенности
+
+## 🛠️ Технологический стек
+
+### Core
+- **React Native** - Кросс-платформенная разработка
+- **Expo** - Инструменты для быстрой разработки
+- **TypeScript** - Типобезопасность
+
+### Навигация
+- **React Navigation v7** - Навигация между экранами
+- **Stack Navigator** - Стековая навигация
+- **Drawer Navigator** - Боковое меню
+
+### Управление состоянием
+- **Redux Toolkit** - Современное управление состоянием
+- **React Redux** - Интеграция Redux с React
+
+### UI/UX
+- **React Native Gesture Handler** - Жесты и анимации
+- **React Native Reanimated** - Плавные анимации
+- **Expo Vector Icons** - Иконки
+
+## 🚀 Установка и запуск
+
+### Предварительные требования
+- Node.js (v18 или выше)
+- npm или yarn
+- Expo CLI
+- iOS Simulator (для Mac) или Android Emulator
+
+### Установка
+
+1. **Клонируйте репозиторий**
+   ```bash
+   git clone https://github.com/yourusername/mils-menu.git
+   cd mils-menu
+   ```
+
+2. **Установите зависимости**
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Запустите приложение**
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Выберите платформу**
+   - Нажмите `i` для iOS Simulator
+   - Нажмите `a` для Android Emulator
+   - Отсканируйте QR-код в Expo Go на физическом устройстве
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📁 Структура проекта
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+mils-menu/
+├── app/                          # Точка входа приложения
+├── components/                   # Переиспользуемые компоненты
+│   ├── CategoriesItem.tsx       # Карточка категории
+│   ├── CategoriesScreen.tsx     # Список категорий
+│   └── MealItem.tsx             # Карточка блюда
+├── navigation/                   # Конфигурация навигации
+│   └── AppNavigator.tsx         # Главный навигатор
+├── redux/                        # Redux состояние
+│   ├── slices/
+│   │   └── favoritesSlice.ts    # Slice для избранного
+│   ├── store/
+│   │   └── store.ts             # Конфигурация store
+│   └── hooks.ts                 # Типизированные хуки
+├── screens/                      # Экраны приложения
+│   ├── HomeScreen.tsx           # Главный экран
+│   ├── CategoryScreen.tsx       # Экран категории
+│   ├── MealDetailedScreen.tsx   # Детали блюда
+│   └── FavoriteScreen.tsx       # Избранное
+├── store/                        # (Закомментирован) Context API
+│   └── context/
+│       └── favorite-context.tsx # Старая реализация на Context
+├── utils/                        # Утилиты и данные
+│   ├── dummy-data.ts            # Тестовые данные
+│   └── models/
+│       ├── category.ts          # Модель категории
+│       └── meal.ts              # Модель блюда
+└── assets/                       # Изображения и ресурсы
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🎓 Образовательная ценность
 
-## Learn more
+Этот проект демонстрирует:
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1. **Миграция с Context API на Redux Toolkit**
+Проект содержит закомментированную реализацию на Context API, что позволяет сравнить два подхода:
+- Context API (простой, встроенный)
+- Redux Toolkit (мощный, масштабируемый)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 2. **Современные паттерны React Native**
+- Функциональные компоненты с хуками
+- TypeScript для типобезопасности
+- Styled components
+- Custom hooks
 
-## Join the community
+### 3. **Навигация**
+- Stack Navigation для иерархической навигации
+- Drawer Navigation для бокового меню
+- Динамические заголовки и кнопки
 
-Join our community of developers creating universal apps.
+### 4. **Redux Best Practices**
+- Slices для модульной организации
+- Типизированные хуки
+- Immutable updates с Immer
+- Redux DevTools integration
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🔧 Основные компоненты
+
+### Redux Store
+```typescript
+// redux/store/store.ts
+export const store = configureStore({
+  reducer: {
+    favorites: favoritesReducer,
+  },
+});
+```
+
+### Favorites Slice
+```typescript
+// redux/slices/favoritesSlice.ts
+const favoritesSlice = createSlice({
+  name: 'favorites',
+  initialState: { favorites: [] },
+  reducers: {
+    addFavorite: (state, action) => {
+      state.favorites.push(action.payload);
+    },
+    removeFavorite: (state, action) => {
+      state.favorites = state.favorites.filter(id => id !== action.payload);
+    },
+  },
+});
+```
+
+### Использование в компонентах
+```typescript
+// Получение состояния
+const favorites = useAppSelector((state) => state.favorites.favorites);
+
+// Dispatch actions
+const dispatch = useAppDispatch();
+dispatch(addFavorite(mealId));
+```
+
+## 📝 Основные фичи
+
+### ❤️ Избранное
+- Добавление/удаление блюд в избранное
+- Персистентное хранение через Redux
+- Визуальная индикация (filled/outline heart icon)
+- Отдельный экран для просмотра избранного
+
+### 🍽️ Категории
+- 8 категорий блюд
+- Цветовое кодирование
+- Счетчик блюд в категории
+- Плавные переходы
+
+### 📖 Детали блюда
+- Фото блюда в высоком качестве
+- Бейджи: affordability, complexity, duration
+- Диетические особенности
+- Список ингредиентов
+- Пошаговые инструкции
+- Кнопка добавления в избранное
+
+## 🎨 UI/UX особенности
+
+- **Цветовая схема**: Teal (#3D9696) как основной цвет
+- **Типографика**: Четкая иерархия текста
+- **Карточки**: Скругленные углы, тени, elevation
+- **Анимации**: Плавные переходы и feedback
+- **Иконки**: Ionicons для консистентности
+- **Адаптивность**: Работает на разных размерах экранов
+
+## 🔜 Планы на будущее
+
+- [ ] Поиск по блюдам
+- [ ] Фильтрация по диетическим особенностям
+- [ ] Сохранение избранного в AsyncStorage
+- [ ] Добавление собственных рецептов
+- [ ] Таймер приготовления
+- [ ] Список покупок
+- [ ] Темная тема
+- [ ] Локализация (EN, RU, UA)
+- [ ] Интеграция с API рецептов
+- [ ] Социальные функции (шаринг)
+
+## 🤝 Вклад в проект
+
+Contributions, issues и feature requests приветствуются!
+
+1. Fork проекта
+2. Создайте feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit изменения (`git commit -m 'Add some AmazingFeature'`)
+4. Push в branch (`git push origin feature/AmazingFeature`)
+5. Откройте Pull Request
+
+## 📄 Лицензия
+
+Этот проект создан в образовательных целях.
+
+## 👨‍💻 Автор
+
+**Igor Spura**
+
+- GitHub: [@igorspura](https://github.com/igorspura)
+
+## 🙏 Благодарности
+
+- [Expo](https://expo.dev) - за отличные инструменты разработки
+- [React Navigation](https://reactnavigation.org) - за мощную навигацию
+- [Redux Toolkit](https://redux-toolkit.js.org) - за упрощение Redux
+- [React Native](https://reactnative.dev) - за кросс-платформенную разработку
+
+---
+
+<div align="center">
+  Made with ❤️ and ☕
+</div>
