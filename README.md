@@ -7,149 +7,149 @@
   <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
 </div>
 
-## 📱 О проекте
+## 📱 About the Project
 
-**Mils Menu** - это современное мобильное приложение для просмотра рецептов блюд, созданное с использованием React Native и Expo. Приложение демонстрирует лучшие практики разработки, включая навигацию, управление состоянием через Redux Toolkit, и красивый UI/UX дизайн.
+**Mils Menu** is a modern mobile application for browsing food recipes, built with React Native and Expo. The app demonstrates best development practices, including navigation, state management with Redux Toolkit, and beautiful UI/UX design.
 
-## ✨ Основные возможности
+## ✨ Key Features
 
-- 🍽️ **Каталог рецептов** - Просмотр блюд по категориям (Italian, Quick & Easy, Hamburgers, German и др.)
-- ❤️ **Избранное** - Добавление и удаление блюд в избранное с помощью Redux
-- 📖 **Детальная информация** - Полное описание блюда с ингредиентами и шагами приготовления
-- 🎨 **Красивый UI** - Современный дизайн с анимациями и градиентами
-- 🔍 **Фильтры** - Диетические особенности (Веган, Вегетарианское, Без лактозы, Без глютена)
-- 🎯 **Навигация** - Drawer Navigation и Stack Navigation
-- 🌙 **Адаптивный дизайн** - Поддержка iOS и Android
+- 🍽️ **Recipe Catalog** - Browse dishes by categories (Italian, Quick & Easy, Hamburgers, German, etc.)
+- ❤️ **Favorites** - Add and remove dishes to favorites using Redux
+- 📖 **Detailed Information** - Complete dish description with ingredients and cooking steps
+- 🎨 **Beautiful UI** - Modern design with animations and gradients
+- 🔍 **Filters** - Dietary features (Vegan, Vegetarian, Lactose-free, Gluten-free)
+- 🎯 **Navigation** - Drawer Navigation and Stack Navigation
+- 🌙 **Responsive Design** - iOS and Android support
 
-## 📸 Скриншоты
+## 📸 Screenshots
 
 <div align="center">
-  <img src="./screenshots/categories.png" width="250" alt="Категории" />
-  <img src="./screenshots/meal-list.png" width="250" alt="Список блюд" />
-  <img src="./screenshots/meal-detail.png" width="250" alt="Детали блюда" />
+  <img src="./screenshots/categories.png" width="250" alt="Categories" />
+  <img src="./screenshots/meal-list.png" width="250" alt="Meal List" />
+  <img src="./screenshots/meal-detail.png" width="250" alt="Meal Details" />
 </div>
 
-### Главный экран - Категории
-Красочные карточки категорий с интуитивной навигацией
+### Home Screen - Categories
+Colorful category cards with intuitive navigation
 
-### Список блюд
-Элегантное отображение блюд с фото, бейджами сложности и времени приготовления
+### Meal List
+Elegant display of dishes with photos, difficulty badges, and cooking time
 
-### Детали блюда
-Полная информация о блюде: фото, ингредиенты, шаги приготовления, диетические особенности
+### Meal Details
+Complete meal information: photo, ingredients, cooking steps, dietary features
 
-## 🛠️ Технологический стек
+## 🛠️ Tech Stack
 
 ### Core
-- **React Native** - Кросс-платформенная разработка
-- **Expo** - Инструменты для быстрой разработки
-- **TypeScript** - Типобезопасность
+- **React Native** - Cross-platform development
+- **Expo** - Tools for rapid development
+- **TypeScript** - Type safety
 
-### Навигация
-- **React Navigation v7** - Навигация между экранами
-- **Stack Navigator** - Стековая навигация
-- **Drawer Navigator** - Боковое меню
+### Navigation
+- **React Navigation v7** - Screen navigation
+- **Stack Navigator** - Stack-based navigation
+- **Drawer Navigator** - Side menu
 
-### Управление состоянием
-- **Redux Toolkit** - Современное управление состоянием
-- **React Redux** - Интеграция Redux с React
+### State Management
+- **Redux Toolkit** - Modern state management
+- **React Redux** - Redux integration with React
 
 ### UI/UX
-- **React Native Gesture Handler** - Жесты и анимации
-- **React Native Reanimated** - Плавные анимации
-- **Expo Vector Icons** - Иконки
+- **React Native Gesture Handler** - Gestures and animations
+- **React Native Reanimated** - Smooth animations
+- **Expo Vector Icons** - Icons
 
-## 🚀 Установка и запуск
+## 🚀 Installation and Setup
 
-### Предварительные требования
-- Node.js (v18 или выше)
-- npm или yarn
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 - Expo CLI
-- iOS Simulator (для Mac) или Android Emulator
+- iOS Simulator (for Mac) or Android Emulator
 
-### Установка
+### Installation
 
-1. **Клонируйте репозиторий**
+1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/mils-menu.git
    cd mils-menu
    ```
 
-2. **Установите зависимости**
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Запустите приложение**
+3. **Start the application**
    ```bash
    npx expo start
    ```
 
-4. **Выберите платформу**
-   - Нажмите `i` для iOS Simulator
-   - Нажмите `a` для Android Emulator
-   - Отсканируйте QR-код в Expo Go на физическом устройстве
+4. **Choose platform**
+   - Press `i` for iOS Simulator
+   - Press `a` for Android Emulator
+   - Scan QR code in Expo Go on physical device
 
-## 📁 Структура проекта
+## 📁 Project Structure
 
 ```
 mils-menu/
-├── app/                          # Точка входа приложения
-├── components/                   # Переиспользуемые компоненты
-│   ├── CategoriesItem.tsx       # Карточка категории
-│   ├── CategoriesScreen.tsx     # Список категорий
-│   └── MealItem.tsx             # Карточка блюда
-├── navigation/                   # Конфигурация навигации
-│   └── AppNavigator.tsx         # Главный навигатор
-├── redux/                        # Redux состояние
+├── app/                          # Application entry point
+├── components/                   # Reusable components
+│   ├── CategoriesItem.tsx       # Category card
+│   ├── CategoriesScreen.tsx     # Categories list
+│   └── MealItem.tsx             # Meal card
+├── navigation/                   # Navigation configuration
+│   └── AppNavigator.tsx         # Main navigator
+├── redux/                        # Redux state
 │   ├── slices/
-│   │   └── favoritesSlice.ts    # Slice для избранного
+│   │   └── favoritesSlice.ts    # Favorites slice
 │   ├── store/
-│   │   └── store.ts             # Конфигурация store
-│   └── hooks.ts                 # Типизированные хуки
-├── screens/                      # Экраны приложения
-│   ├── HomeScreen.tsx           # Главный экран
-│   ├── CategoryScreen.tsx       # Экран категории
-│   ├── MealDetailedScreen.tsx   # Детали блюда
-│   └── FavoriteScreen.tsx       # Избранное
-├── store/                        # (Закомментирован) Context API
+│   │   └── store.ts             # Store configuration
+│   └── hooks.ts                 # Typed hooks
+├── screens/                      # Application screens
+│   ├── HomeScreen.tsx           # Home screen
+│   ├── CategoryScreen.tsx       # Category screen
+│   ├── MealDetailedScreen.tsx   # Meal details
+│   └── FavoriteScreen.tsx       # Favorites
+├── store/                        # (Commented) Context API
 │   └── context/
-│       └── favorite-context.tsx # Старая реализация на Context
-├── utils/                        # Утилиты и данные
-│   ├── dummy-data.ts            # Тестовые данные
+│       └── favorite-context.tsx # Old Context implementation
+├── utils/                        # Utilities and data
+│   ├── dummy-data.ts            # Mock data
 │   └── models/
-│       ├── category.ts          # Модель категории
-│       └── meal.ts              # Модель блюда
-└── assets/                       # Изображения и ресурсы
+│       ├── category.ts          # Category model
+│       └── meal.ts              # Meal model
+└── assets/                       # Images and resources
 ```
 
-## 🎓 Образовательная ценность
+## 🎓 Educational Value
 
-Этот проект демонстрирует:
+This project demonstrates:
 
-### 1. **Миграция с Context API на Redux Toolkit**
-Проект содержит закомментированную реализацию на Context API, что позволяет сравнить два подхода:
-- Context API (простой, встроенный)
-- Redux Toolkit (мощный, масштабируемый)
+### 1. **Migration from Context API to Redux Toolkit**
+The project contains a commented Context API implementation, allowing comparison of two approaches:
+- Context API (simple, built-in)
+- Redux Toolkit (powerful, scalable)
 
-### 2. **Современные паттерны React Native**
-- Функциональные компоненты с хуками
-- TypeScript для типобезопасности
+### 2. **Modern React Native Patterns**
+- Functional components with hooks
+- TypeScript for type safety
 - Styled components
 - Custom hooks
 
-### 3. **Навигация**
-- Stack Navigation для иерархической навигации
-- Drawer Navigation для бокового меню
-- Динамические заголовки и кнопки
+### 3. **Navigation**
+- Stack Navigation for hierarchical navigation
+- Drawer Navigation for side menu
+- Dynamic headers and buttons
 
 ### 4. **Redux Best Practices**
-- Slices для модульной организации
-- Типизированные хуки
-- Immutable updates с Immer
+- Slices for modular organization
+- Typed hooks
+- Immutable updates with Immer
 - Redux DevTools integration
 
-## 🔧 Основные компоненты
+## 🔧 Core Components
 
 ### Redux Store
 ```typescript
@@ -178,9 +178,9 @@ const favoritesSlice = createSlice({
 });
 ```
 
-### Использование в компонентах
+### Usage in Components
 ```typescript
-// Получение состояния
+// Get state
 const favorites = useAppSelector((state) => state.favorites.favorites);
 
 // Dispatch actions
@@ -188,76 +188,76 @@ const dispatch = useAppDispatch();
 dispatch(addFavorite(mealId));
 ```
 
-## 📝 Основные фичи
+## 📝 Main Features
 
-### ❤️ Избранное
-- Добавление/удаление блюд в избранное
-- Персистентное хранение через Redux
-- Визуальная индикация (filled/outline heart icon)
-- Отдельный экран для просмотра избранного
+### ❤️ Favorites
+- Add/remove dishes to favorites
+- Persistent storage via Redux
+- Visual indication (filled/outline heart icon)
+- Dedicated screen for viewing favorites
 
-### 🍽️ Категории
-- 8 категорий блюд
-- Цветовое кодирование
-- Счетчик блюд в категории
-- Плавные переходы
+### 🍽️ Categories
+- 8 meal categories
+- Color coding
+- Meal count per category
+- Smooth transitions
 
-### 📖 Детали блюда
-- Фото блюда в высоком качестве
-- Бейджи: affordability, complexity, duration
-- Диетические особенности
-- Список ингредиентов
-- Пошаговые инструкции
-- Кнопка добавления в избранное
+### 📖 Meal Details
+- High-quality meal photo
+- Badges: affordability, complexity, duration
+- Dietary features
+- Ingredients list
+- Step-by-step instructions
+- Add to favorites button
 
-## 🎨 UI/UX особенности
+## 🎨 UI/UX Features
 
-- **Цветовая схема**: Teal (#3D9696) как основной цвет
-- **Типографика**: Четкая иерархия текста
-- **Карточки**: Скругленные углы, тени, elevation
-- **Анимации**: Плавные переходы и feedback
-- **Иконки**: Ionicons для консистентности
-- **Адаптивность**: Работает на разных размерах экранов
+- **Color Scheme**: Teal (#3D9696) as primary color
+- **Typography**: Clear text hierarchy
+- **Cards**: Rounded corners, shadows, elevation
+- **Animations**: Smooth transitions and feedback
+- **Icons**: Ionicons for consistency
+- **Responsiveness**: Works on different screen sizes
 
-## 🔜 Планы на будущее
+## 🔜 Future Plans
 
-- [ ] Поиск по блюдам
-- [ ] Фильтрация по диетическим особенностям
-- [ ] Сохранение избранного в AsyncStorage
-- [ ] Добавление собственных рецептов
-- [ ] Таймер приготовления
-- [ ] Список покупок
-- [ ] Темная тема
-- [ ] Локализация (EN, RU, UA)
-- [ ] Интеграция с API рецептов
-- [ ] Социальные функции (шаринг)
+- [ ] Search meals
+- [ ] Filter by dietary features
+- [ ] Save favorites to AsyncStorage
+- [ ] Add custom recipes
+- [ ] Cooking timer
+- [ ] Shopping list
+- [ ] Dark theme
+- [ ] Localization (EN, RU, UA)
+- [ ] Recipe API integration
+- [ ] Social features (sharing)
 
-## 🤝 Вклад в проект
+## 🤝 Contributing
 
-Contributions, issues и feature requests приветствуются!
+Contributions, issues, and feature requests are welcome!
 
-1. Fork проекта
-2. Создайте feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit изменения (`git commit -m 'Add some AmazingFeature'`)
-4. Push в branch (`git push origin feature/AmazingFeature`)
-5. Откройте Pull Request
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📄 Лицензия
+## 📄 License
 
-Этот проект создан в образовательных целях.
+This project was created for educational purposes.
 
-## 👨‍💻 Автор
+## 👨‍💻 Author
 
 **Igor Spura**
 
 - GitHub: [@igorspura](https://github.com/igorspura)
 
-## 🙏 Благодарности
+## 🙏 Acknowledgments
 
-- [Expo](https://expo.dev) - за отличные инструменты разработки
-- [React Navigation](https://reactnavigation.org) - за мощную навигацию
-- [Redux Toolkit](https://redux-toolkit.js.org) - за упрощение Redux
-- [React Native](https://reactnative.dev) - за кросс-платформенную разработку
+- [Expo](https://expo.dev) - for excellent development tools
+- [React Navigation](https://reactnavigation.org) - for powerful navigation
+- [Redux Toolkit](https://redux-toolkit.js.org) - for simplifying Redux
+- [React Native](https://reactnative.dev) - for cross-platform development
 
 ---
 
